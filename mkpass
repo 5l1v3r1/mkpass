@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ $1 -z ]
+	then
+		read -p '[*] How long will your password be?: ' LEN
+		clear
+		cat /dev/urandom| tr -dc 'a-zA-Z0-9' | fold -w $LEN| head -n 1
+		cat /dev/urandom| tr -dc 'a-zA-Z0-9' | fold -w $LEN| head -n 1
+		cat /dev/urandom| tr -dc 'a-zA-Z0-9' | fold -w $LEN| head -n 1
+		cat /dev/urandom| tr -dc 'a-zA-Z0-9' | fold -w $LEN| head -n 1
+		cat /dev/random| tr -dc 'a-zA-Z0-9' | fold -w $LEN| head -n 1
+		echo
+	else
+		clear
+        cat /dev/urandom| tr -dc 'a-zA-Z0-9' | fold -w $1| head -n 1
+        cat /dev/urandom| tr -dc 'a-zA-Z0-9' | fold -w $1| head -n 1
+        cat /dev/urandom| tr -dc 'a-zA-Z0-9' | fold -w $1| head -n 1
+        cat /dev/urandom| tr -dc 'a-zA-Z0-9' | fold -w $1| head -n 1
+        cat /dev/urandom| tr -dc 'a-zA-Z0-9' | fold -w $1| head -n 1
+        echo
+fi
